@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanteador</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="local">
+                <div class="cabecera">
+                    <p contenteditable="true">Local</p>
+                    <p class="puntos" id="puntosLocal">0</p>
+                </div>
+                <div class="botones">
+                    <button onclick="aumentarPuntosLocal()">Aumentar Puntos</button>
+                    <button onclick="disminuirPuntosLocal()">Disminuir Puntos</button>
+                </div>
+            </div>
+            <div class="tiempo">
+                <div class="cabecera">
+                    <p contenteditable="true">Tiempo</p>
+                    <p class="temporizador" id="cronometro">30:00</p>
+                </div>
+                <div class="botones">
+                    <button id="empezar" onclick="comenzarCronometro1()">Empezar</button>
+                    <button id="pausar" onclick="pausarCronometro()">Pausar</button>
+                    <button id="resetear" onclick="resetearCronometro()">Resetear</button>
+                </div>
+            </div>
+            <div class="visita">
+                <div class="cabecera">
+                    <p contenteditable="true">Visita</p>
+                    <p class="puntos" id="puntosVisita">0</p>
+                </div>
+                <div class="botones">
+                    <button onclick="aumentarPuntosVisitante()">Aumentar Puntos</button>
+                    <button onclick="disminuirPuntosVisitante()">Disminuir Puntos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <script src="./main.js"></script>
+</body>
+</html>
